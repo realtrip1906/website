@@ -10,13 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;800&family=Molle&family=Rosario:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="home">
     <nav style="display: flex; align-items: center; padding:30px 100px 30px 100px; gap: 500px; width: auto; justify-content: space-evenly;">
         <div class="logo" style="cursor: pointer;">
-            Realtrip
+            Realtrip.
         </div>
 
         <ul class="nav-links" style="list-style: none; display: flex; gap: 60px; cursor: pointer;">
@@ -29,7 +32,7 @@
     </nav>
      
     <div class="hero-total">
-    <div class="hero" style="padding: 0px 65px 0px 255px;">
+    <div class="hero" style="padding: 0px 65px 0px 200px;">
         <div class="hero-text">
             <div class="hero-top">Embark On Unforgettable Family Vacations!</div>
             <div class="hero-header">Beyond<br/> The Ordinary</div>
@@ -37,7 +40,7 @@
                 itineraries packed with activities that ignite each member's passion. From thrill-seeking safaris to
                 culture-immersed tours, we cater to all ages and interests. Ready to escape the ordinary?
             </div>
-            <button class="explore-group-plans" >Explore Group Plans</button>
+            <div class="explore-group-plans" >Explore Group Plans</div>
         </div>
        
     </div> 
@@ -45,17 +48,19 @@
     <div class="swiper">
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
             </div>
            
     </div>
     <div class="swiper-nav-container">
         <div id="swiper-button-prev" class="swiper-button-prev"></div>
         <svg height="10" width="460">
-            <line x1="0" y1="10" x2="460" y2="10" style="stroke:rgb(255, 255, 255);stroke-width:8" />
+            <line x1="0" y1="10" x2="460" y2="10" style="stroke:rgb(255, 255, 255);stroke-width:4" />
           </svg>
         <div id="swiper-button-next" class="swiper-button-next"></div>
     </div>
@@ -70,7 +75,9 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            loop: true,
+            autoplay: {
+                delay: 3000,
+            },    
             slidesPerView: 3,
             spaceBetween: 30,
         });
