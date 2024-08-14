@@ -1,0 +1,82 @@
+:root {
+    --swiper-navigation-size: 20px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100 vw;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("./images/mainbg.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+}
+
+.hero-total{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.swiping{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;  
+    margin-top: 50px;
+}
+.swiper{
+    display: block;
+    width: 1000px;
+}
+.swiper-slide{
+    height: 400px;
+    width: 280px !important; 
+    background-color: #714b4b;
+    border-radius: 16px;
+}
+
+.swiper-button-prev{
+    position: relative;
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 35px;
+    z-index: 10;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    
+}
+.swiper-button-next{
+    position: relative;
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 35px;
+    z-index: 10;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.swiper-nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+.swiper-nav-container svg{
+    margin-top: 15px;
+}
