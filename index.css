@@ -27,6 +27,7 @@ body {
     overflow-y: hidden;
     width: 100%;
     height: auto;
+    align-items: center;
 }
 
 .nav {
@@ -34,7 +35,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: auto;
+    width: 80%;
     padding: 30px 200px;
     justify-content: space-between;
 
@@ -91,6 +92,7 @@ body {
 .logo {
     font-family: Molle;
     font-size: 32px;
+    color: #ffffff;
     text-shadow: 4px 3px 8px rgba(0, 0, 0, 0.428);
 
     &:hover {
@@ -342,9 +344,13 @@ body {
 
 
 @media only screen and (max-width: 767px) {
-
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
     .nav {
         padding: 10px 30px;
+        width: 80%;
     }
 
     .nav-links {
@@ -421,6 +427,10 @@ body {
 }
 
 @media (max-width:1450px) and (min-width:768px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
     .nav-links{
         display: none;
     }
