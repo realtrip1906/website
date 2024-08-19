@@ -83,7 +83,6 @@ body {
         padding: 10px;
     }
     & li:hover{
-        
         color: #000000;
         background-color: #ffffff;
     }
