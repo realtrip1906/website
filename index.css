@@ -14,6 +14,7 @@
 body {
     margin: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
     width: 100vw;
     height: 100vh;
 }
@@ -30,7 +31,8 @@ nav {
         font-family: Rosario;
         font-size: 20px;
         text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.428);
-
+        width: 60%;
+        text-align: center;
         &:hover {
             text-shadow: 2px 10px 2px rgba(0, 0, 0, 0.428);
             transition: all 0.5s;
@@ -46,6 +48,33 @@ nav {
     cursor: pointer;
     justify-content: space-between;
     white-space: nowrap;
+}
+
+.nav-links.active{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: absolute;
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 200px;
+    z-index: 99;
+    padding: 200px 5px 210px 5px;
+    align-items: center;
+    justify-content: flex-end;
+    
+    & li{
+        text-shadow: none;
+        padding: 10px;
+    }
+    & li:hover{
+        
+        color: #000000;
+        background-color: #ffffff;
+    }
 }
 
 .logo {
@@ -74,7 +103,9 @@ nav {
 
 .burger input {
     display: none;
+    
 }
+
 
 .burger span {
     display: block;
@@ -317,8 +348,12 @@ nav {
         display: none;
     }
 
-    .small-nav {
+    .small-nav{
         display: block;
+        z-index: 100;
+        & input:checked~span{
+            background: #ffffff;
+        }
     }
 
     .hero-total {
@@ -383,6 +418,17 @@ nav {
 }
 
 @media (max-width:1450px) and (min-width:768px) {
+    .nav-links{
+        display: none;
+    }
+    .small-nav{
+        display: block;
+        
+        z-index: 100;
+        & input:checked~span{
+            background: #ffffff;
+        }
+    }
     .home{
         gap: 40px;
     }

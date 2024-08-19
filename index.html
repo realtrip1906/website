@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="index.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,6 +32,7 @@
                     <span></span>
                 </label>
             </div>
+
             <div class="nav-links">
                 <li>Home</li>
                 <li>Packages</li>
@@ -91,20 +93,28 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-                clickable: true,
+               
             },
             autoplay: {
                 delay: 2500,
-                disableOnInteraction: false,
+               
             },
             slidesPerView: 3,
             spaceBetween: 30,
-            breakpoints:{
-                1450:{
-                    slidesPerView: 4,
-                }
-            }
         });
+
+        
+const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('change', function() {
+    if (this.checked) {
+        navLinks.classList.add('active');
+    } else {
+        navLinks.classList.remove('active');
+    }
+});
+
     </script>
 </body>
 
