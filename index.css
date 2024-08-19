@@ -19,6 +19,8 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    max-width: 1800px;
+    overflow-x: hidden;
 }
 body {
     margin: 0;
@@ -35,7 +37,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 80%;
     padding: 30px 200px;
     justify-content: space-between;
 
@@ -170,7 +171,7 @@ body {
 .home {
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 150px;
     height: 100%;
     width: 100%;
 }
@@ -243,11 +244,14 @@ body {
     gap: 40px;
     margin-top: 50px;
     padding: 0px 50px;
+    height: 510px;
 }
 
 .swiper {
     display: block;
-    width: 1000px;
+    width: 800px;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .swiper-slide {
@@ -335,6 +339,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 50px;
+    width: fit-content;
 }
 
 .swiper-nav-container svg {
@@ -350,7 +355,6 @@ body {
     }
     .nav {
         padding: 10px 30px;
-        width: 80%;
     }
 
     .nav-links {
