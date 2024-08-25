@@ -10,12 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="index.css">
-
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;800&family=Molle&family=Rosario:ital,wght@0,500;1,500&display=swap"
         rel="stylesheet">
+     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="https://kit.fontawesome.com/a56f637b32.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +32,7 @@
         
         <div class="nav">
             <div class="logo" style="cursor: pointer;">
-                Realtrip.
+                <a href="./index.html">Realtrip.</a>
             </div>
             <div class="small-nav">
                 <label class="burger" for="burger">
@@ -40,8 +44,8 @@
             </div>
 
             <div class="nav-links">
-                <li>Home</li>
-                <li>Packages</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
                 <li>About US</li>
                 <li>Destination</li>
                 <li>Contact</li>
@@ -88,38 +92,26 @@
         </div>
 
     </div>
-   
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a56f637b32.js" crossorigin="anonymous"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            initialSlide: 3,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: false, // Disable navigation arrows
-        });
-
-
-        const burger = document.getElementById('burger');
-        const navLinks = document.querySelector('.nav-links');
-
-        burger.addEventListener('change', function () {
-            if (this.checked) {
-                navLinks.classList.add('active');
-            } else {
-                navLinks.classList.remove('active');
-            }
-        });
-    </script>
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        
+    },
+    initialSlide: 3,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: false, // Disable navigation arrows
+});
+   </script>
+   <script src="./index.js"></script>
+    
 </body>
 
 </html>
