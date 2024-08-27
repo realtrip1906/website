@@ -10,6 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./styles/packages.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/about.css">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,15 +25,8 @@
     <script src="https://kit.fontawesome.com/a56f637b32.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="social-media">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-    <div class="home">
-        
-        <div class="nav">
+<body> 
+    <div class="nav">
             <div class="logo" style="cursor: pointer;">
                 <a href="./index.html">Realtrip.</a>
             </div>
@@ -44,12 +40,22 @@
             </div>
 
             <div class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="packages.html">Packages</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </div>
         </div>
+    <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+   
+    <!--Home-->
+    <div id="home" class="home">
+        
+        
 
         <div class="hero-total">
 
@@ -63,16 +69,18 @@
                     itineraries packed with activities that ignite each member's passion. From thrill-seeking safaris to
                     culture-immersed tours, we cater to all ages and interests. Ready to escape the ordinary?
                 </div>
+                <a style="text-decoration: none;" href="packages.html"></a>
                 <div class="explore-group-plans">
-                    <a style="text-decoration: none;" href="packages.html">
+                    
                     <div class="plans-text">Explore Group Plans</div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
                     </svg>
-                    </a>
+                    
                 </div>
+            </a>
             </div>
 
 
@@ -92,6 +100,88 @@
         </div>
 
     </div>
+    <!--Packages-->
+    <div id="packages" class="packages">
+
+    <!-- Main Content -->
+    <section class="upcoming-trips">
+        <h2>Explore Wonderful Experiences</h2>
+        <h1>Upcoming Trips</h1>
+        <div class="trips-grid">
+            <!-- Trip cards -->
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+            <div class="trip-card"></div>
+        </div>
+    </section>
+</div>
+    <!--Contact-->
+<div id="contact" class="contactUs">
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-details">
+            <h2>RealTrip.</h2>
+            <p>
+                <strong>Address:</strong> 123 Adventure Lane, Travel City, TR 45678<br>
+                <strong>Email:</strong> info@realtrip.com<br>
+                <strong>Phone:</strong> +1 (555) 123-4567<br>
+                <strong>Online Hours:</strong> Mon - Fri: 9 AM - 5 PM
+            </p>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</div>
+<!--About-->
+<div id="about" class="aboutUs">
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-text">
+            <div class="about-hero-head">RealTrip wants to offer you the best experiences and memories of your life!</div>
+            <div class="about-hero-bottom">Our team has only one goal: to create great moments for our travelers and their families.</div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team">
+        <div class="team-head">Our Team</div>
+        <div class="team-grid">
+            <div class="team-member"></div>
+            <div class="team-member"></div>
+            <div class="team-member"></div>
+            <div class="team-member"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonial-head">Testimonial</div>
+        <div class="testimonial-grid">
+            <div class="testimonial"></div>
+            <div class="testimonial"></div>
+            <div class="testimonial"></div>
+            <div class="testimonial"></div>
+        </div>
+    </section>
+</div>
+
    <script>
     var swiper = new Swiper('.swiper-container', {
     loop: true,
