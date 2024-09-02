@@ -1,95 +1,212 @@
 /* General Styles */
 .aboutUs{
-    scroll-snap-align: start;
-    color: white;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.469), rgba(0, 0, 0, 0.318)), 
-    url('../images/aboutusbg.jpg') no-repeat center center/cover;
-}
-
-
-/* Hero Section Styles */
-.about-hero {
-    color: white;
-    height: 70vh;
+    scroll-behavior: smooth;
+    color: var(--white);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: left;
-    padding: 0 200px;
+    padding: 180px 110px 180px 140px;
+    background: var(--orange)
 }
+
 .about-hero-text{
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: flex-end;
     justify-content: space-between;
 }
 .about-hero-text .about-hero-head {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: bold;
     max-width: 700px;
 }
 
 .about-hero-text .about-hero-bottom {
-    font-size: 20px;
+    font-size: 24px;
     max-width: 500px;
 }
 
-/* Our Team Section Styles */
+.about-hero-head.doAnimation{
+    animation: about-hero 1s ease-in;
+}
+.about-hero-bottom.doAnimation{
+    animation: about-hero 1.5s ease-in;
+}
 .team {
-    padding: 50px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    height: 100vh;
+    margin-top: 50px;
 }
-
-.team .team-head {
+@keyframes our-team{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.team-head {
+    margin-top: 100px;
     font-size: 52px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     font-family: Molle, cursive;
+    opacity: 0;
 }
-
+.team-head.doAnimation{
+    animation: our-team 1s ease-in;
+    opacity: 1;
+}
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
 .team-member {
     background-color: rgba(0, 0, 0, 0.316);
     height: 400px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-image: url('path-to-your-team-image.jpg'); /* Replace with your team image */
     background-size: cover;
     background-position: center;
+    opacity: 0;
 }
+.team-member:nth-child(1).doAnimation{
+    animation: team-member 1s ease-in;
+    opacity: 1;
+}
+.team-member:nth-child(2).doAnimation{
+    animation: team-member 1.5s ease-in;
+    opacity: 1;
+}
+.team-member:nth-child(3).doAnimation{
+    animation: team-member 2s ease-in;
+    opacity: 1;
+}
+.team-member:nth-child(4).doAnimation{
+    animation: team-member 2.5s ease-in;
+    opacity: 1;
+}
+@keyframes team-member{
+    0%{
+        opacity: 0;
+        transform: translateY(50px) translateX(50px);
 
-/* Testimonials Section Styles */
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
 .testimonials {
-    padding: 0px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    height: 100vh;
+    margin-top: 50px;
+    
 }
 
-.testimonials .testimonial-head {
+.testimonial-head {
     font-size: 52px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     font-family: 'Molle', cursive;
+    margin-top: 50px;
+    opacity: 0;
 }
-
+.testimonial-head.doAnimation{
+    animation: our-team 1s ease-in;
+    opacity: 1;
+}
 .testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .testimonial {
-    background-color: rgba(0, 0, 0, 0.33);
+    background-color: rgba(0, 0, 0, 0.316);
     height: 400px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-image: url('path-to-your-testimonial-image.jpg'); /* Replace with your testimonial image */
+    background-image: url('path-to-your-team-image.jpg'); /* Replace with your team image */
     background-size: cover;
     background-position: center;
+    opacity: 0;
+}
+.testimonial:nth-child(1).doAnimation{
+    animation: testimonials 1s ease-in;
+    opacity: 1;
+}
+.testimonial:nth-child(2).doAnimation{
+    animation: testimonials 1.5s ease-in;
+    opacity: 1;
+}
+.testimonial:nth-child(3).doAnimation{
+    animation: testimonials 2s ease-in;
+    opacity: 1;
+}
+.testimonial:nth-child(4).doAnimation{
+    animation: testimonials 2.5s ease-in;
+    opacity: 1;
+}
+@keyframes testimonials{
+    0%{
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes about-hero{
+    0%{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .aboutUs {
+        padding: 100px 50px;
+    }
+
+    .about-hero-text .about-hero-head {
+        font-size: 32px;
+    }
+
+    .about-hero-text .about-hero-bottom {
+        font-size: 18px;
+    }
+
+    .team .team-head {
+        font-size: 32px;
+    }
+
+    .testimonial .testimonial-head {
+        font-size: 32px;
+    }
 }

@@ -8,25 +8,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./styles/packages.css">
     <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/about.css">
+
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;800&family=Molle&family=Rosario:ital,wght@0,500;1,500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;800&family=Molle&family=Rosario:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
      
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
     <script src="https://kit.fontawesome.com/a56f637b32.js" crossorigin="anonymous"></script>
 </head>
 
 <body> 
-    <div class="nav">
+    <div id="loader" class="loader">
+        <div>
+            <div class="loader-content">
+              <h2>Realtrip.</h2>
+              <h2>Realtrip.</h2>
+            </div>
+          </div>
+    </div>
+    <div id="main" class="main">
+    <div id="nav" class="nav">
             <div class="logo" style="cursor: pointer;">
                 <a href="./index.html">Realtrip.</a>
             </div>
@@ -48,18 +58,17 @@
         </div>
     <div class="social-media">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
    
-    <!--Home-->
-    <div id="home" class="home">
+    
+    <div id="home" class="home section">
         
         
 
         <div class="hero-total">
 
-            <div class="hero-text">
+            <div id="hero-text" class="hero-text animate">
                 <div class="hero-top">Embark On Unforgettable Family Vacations!
                     
                 </div>
@@ -84,7 +93,7 @@
             </div>
 
 
-            <div class="right-content">
+            <div class="right-content animate">
                 
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -100,34 +109,52 @@
         </div>
 
     </div>
-    <!--Packages-->
-    <div id="packages" class="packages">
+    
 
-    <!-- Main Content -->
+    <div id="packages" class="packages ">
+
+    
     <section class="upcoming-trips">
-        <h2>Explore Wonderful Experiences</h2>
-        <h1>Upcoming Trips</h1>
+        <h2 class="upcoming-top animate">Explore Wonderful Experiences</h2>
+        <h1 class=" upcoming-header animate">Upcoming Trips</h1>
         <div class="trips-grid">
-            <!-- Trip cards -->
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
-            <div class="trip-card"></div>
+            
+            <div class="trip-card animate"></div>
+            <div class="trip-card animate"></div>
+            <div class="trip-card animate"></div>
+            <div class="trip-card animate"></div>
         </div>
     </section>
 </div>
-    <!--Contact-->
-<div id="contact" class="contactUs">
-    <!-- Contact Section -->
-    <section class="contact">
+   
+<div id="about" class="aboutUs section">
+    
+    <div class="about-hero-text">
+            <div class="about-hero-head animate">RealTrip wants to offer you the best experiences and memories of your life!</div>
+            <div class="about-hero-bottom animate">Our team has only one goal: to create great moments for our travelers and their families.</div>
+        </div>
+    <div class="team">
+        <div class="team-head animate">Our Team</div>
+        <div class="team-grid">
+            <div class="team-member animate"></div>
+            <div class="team-member animate"></div>
+            <div class="team-member animate"></div>
+            <div class="team-member animate"></div>
+        </div>
+    </div>
+    <div class="testimonials">
+        <div class="testimonial-head animate">Testimonial</div>
+        <div class="testimonial-grid">
+            <div class="testimonial animate"></div>
+            <div class="testimonial animate"></div>
+            <div class="testimonial animate"></div>
+            <div class="testimonial animate"></div>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="contactUs section">
+    
         <div class="contact-details">
             <h2>RealTrip.</h2>
             <p>
@@ -146,40 +173,10 @@
                 <button type="submit">Send Message</button>
             </form>
         </div>
-    </section>
 </div>
-<!--About-->
-<div id="about" class="aboutUs">
 
-    <!-- Hero Section -->
-    <section class="about-hero">
-        <div class="about-hero-text">
-            <div class="about-hero-head">RealTrip wants to offer you the best experiences and memories of your life!</div>
-            <div class="about-hero-bottom">Our team has only one goal: to create great moments for our travelers and their families.</div>
-        </div>
-    </section>
 
-    <!-- Our Team Section -->
-    <section class="team">
-        <div class="team-head">Our Team</div>
-        <div class="team-grid">
-            <div class="team-member"></div>
-            <div class="team-member"></div>
-            <div class="team-member"></div>
-            <div class="team-member"></div>
-        </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="testimonial-head">Testimonial</div>
-        <div class="testimonial-grid">
-            <div class="testimonial"></div>
-            <div class="testimonial"></div>
-            <div class="testimonial"></div>
-            <div class="testimonial"></div>
-        </div>
-    </section>
 </div>
 
    <script>
@@ -188,10 +185,10 @@
     slidesPerView: 1,
     spaceBetween: 30,
     autoplay: {
-        delay: 2000,
+        delay: 4500,
         disableOnInteraction: false,
-        
     },
+    ease : 'ease-in',
     initialSlide: 3,
     pagination: {
         el: '.swiper-pagination',
@@ -201,7 +198,7 @@
 });
    </script>
    <script src="./index.js"></script>
-    
+
 </body>
 
 </html>
