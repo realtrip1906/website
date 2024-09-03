@@ -1,4 +1,4 @@
-/* General Styles */
+
 .aboutUs{
     scroll-behavior: smooth;
     color: var(--white);
@@ -7,8 +7,8 @@
     align-items: center;
     justify-content: center;
     text-align: left;
-    padding: 180px 110px 180px 140px;
-    background: var(--orange)
+    padding: 120px 110px 180px 140px;
+    background:linear-gradient(180deg, hsla(28, 100%, 53%, 1) 90%, hsla(0, 0%, 0%, 1) 100%), var(--orange)
 }
 
 .about-hero-text{
@@ -139,6 +139,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
+    padding-bottom: 200px;
 }
 
 .testimonial {

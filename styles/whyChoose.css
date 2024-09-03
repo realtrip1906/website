@@ -1,0 +1,88 @@
+.why-choose-realtrip {
+    background:linear-gradient(180deg, rgb(255, 255, 255) 51%, hsla(28, 100%, 53%, 1) 100%), #ffffff;
+    padding: 100px 100px 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why-header {
+    font-size: 2.5em;
+    font-family: Molle;
+    padding: 50px;
+    margin-bottom: 100px;
+    color: #333;
+}
+
+.counters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.counter {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.counter i {
+    font-size: 3em;
+    color: var(--cyan);
+    margin-bottom: 10px;
+}
+
+.counter h3 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: var(--cyan);
+    font-family: Alegreya Sans;
+}
+
+.counter p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    max-width: 200px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Alegreya Sans;
+}
+
+.feature i {
+    font-size: 2.5em;
+    color: var(--orange);
+    margin-bottom: 10px;
+}
+
+.feature h4 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: var(--orange);
+}
+
+.feature p {
+    font-size: 1.1em;
+    color: #555;
+}
