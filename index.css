@@ -308,7 +308,7 @@ body {
   gap: 150px;
   width: 100vw;
   height: 100vh;
-  padding: 0px 120px;
+  padding: 50px 120px;
   background: linear-gradient(180deg, transparent 20%, #5bc3eb 100%),
     url("./images/mainbg.jpg") no-repeat center center/cover;
 }
@@ -438,7 +438,7 @@ body {
 .whatsapp-link {
   position: absolute;
   left: 30px;
-  bottom: 20px;
+  bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -56,9 +56,8 @@
     }
 }
 .team-head {
-    margin-top: 100px;
+    margin: 100px 0;
     font-size: 52px;
-    margin-bottom: 100px;
     font-family: Molle, cursive;
     opacity: 0;
 }
@@ -124,9 +123,8 @@
 
 .testimonial-head {
     font-size: 52px;
-    margin-bottom: 100px;
     font-family: 'Molle', cursive;
-    margin-top: 50px;
+    margin: 100px 0;
     opacity: 0;
 }
 .testimonial-head.doAnimation{
@@ -203,11 +201,19 @@
         font-size: 18px;
     }
 
-    .team .team-head {
-        font-size: 32px;
+    .team-head {
+        font-size: 42px;
     }
 
-    .testimonial .testimonial-head {
+    .testimonial-head {
         font-size: 32px;
+    }
+    .testimonial{
+        height: 300px;
+        width: 250px;
+    }
+    .team-member{
+        height: 300px;
+        width: 250px;
     }
 }

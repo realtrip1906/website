@@ -1,113 +1,119 @@
 .footer {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 50px 0;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 50px 0;
 }
 
 .footer-top {
-    border-bottom: 1px solid #333;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px 0px 10px 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px 0px 10px 200px;
 }
 
 .footer-logo {
-    flex: 1;
-    margin-bottom: 10px;
+  flex: 1;
+  margin-bottom: 10px;
 }
 
 .footer-logo h1 {
-    margin: 0;
+  margin: 0;
 }
 
 .footer-nav {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 10px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer-nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-quick-links,
 .footer-popular-trips {
-    flex: 1;
-    margin-bottom: 10px;
+  flex: 1;
+  margin-bottom: 10px;
 }
 
 .footer-quick-links h3,
 .footer-popular-trips h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .footer-quick-links ul,
 .footer-popular-trips ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-quick-links li,
 .footer-popular-trips li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .footer-quick-links a,
 .footer-popular-trips a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-quick-links a:hover,
 .footer-popular-trips a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-bottom {
-    text-align: center;
-    font-size: 0.9em;
+  text-align: center;
+  font-size: 0.9em;
 }
 
 .footer-bottom p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .footer-bottom a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-bottom a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @keyframes footer {
-    0% {
-        transform: translateY(-40%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-
 .footer-content.doAnimation {
-    animation: footer 1s ease;
+  animation: footer 1s ease;
+}
+
+@media (max-width: 700px) {
+  .footer-content {
+    padding: 30px 40px;
+  }
 }
